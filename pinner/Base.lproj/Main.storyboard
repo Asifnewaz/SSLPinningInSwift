@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ugt-5c-tQ3">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Certificates View Controller-->
+        <scene sceneID="5Vr-fE-98h">
+            <objects>
+                <viewController storyboardIdentifier="CertificatesViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UES-yG-ODe" customClass="CertificatesViewController" customModule="pinner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pl1-n8-g6h">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="9Mg-bV-nb2">
+                                <rect key="frame" x="20" y="10" width="335" height="185"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. SSL Pinning with CashBaba" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efL-mb-YTI">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="35"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="14"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FB5-DQ-2Mg">
+                                        <rect key="frame" x="0.0" y="50" width="335" height="35"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="A19-eS-rW8"/>
+                                        </constraints>
+                                        <state key="normal" title="     CashBaba" image="plus" catalog="system">
+                                            <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="selectCBCertificate:" destination="UES-yG-ODe" eventType="touchUpInside" id="VIV-lH-9o0"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2. SSL Pinning with stack overflow" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZA-mB-ia2">
+                                        <rect key="frame" x="0.0" y="100" width="335" height="35"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="14"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JFc-sO-UoQ">
+                                        <rect key="frame" x="0.0" y="150" width="335" height="35"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <state key="normal" title="     SO" image="plus" catalog="system">
+                                            <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="selectSOCertificate:" destination="UES-yG-ODe" eventType="touchUpInside" id="QqQ-Np-5Ci"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="9Mg-bV-nb2" firstAttribute="leading" secondItem="WC7-2Q-gtO" secondAttribute="leading" constant="20" id="Mqr-zZ-BAI"/>
+                            <constraint firstItem="WC7-2Q-gtO" firstAttribute="trailing" secondItem="9Mg-bV-nb2" secondAttribute="trailing" constant="20" id="Vbx-66-Cno"/>
+                            <constraint firstItem="9Mg-bV-nb2" firstAttribute="top" secondItem="WC7-2Q-gtO" secondAttribute="top" constant="10" id="YUx-oD-Zl1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WC7-2Q-gtO"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="oSu-EJ-6Bp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ri4-nm-CrL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1079" y="-716"/>
+        </scene>
+        <!--Test SSL Pinning-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="pinner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="uEN-Xq-BLX">
+                                <rect key="frame" x="20" y="54" width="335" height="508"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. Without SSL Pinning" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oYa-r0-XHQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="37.5"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="14"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H51-Xl-Ysw">
+                                        <rect key="frame" x="0.0" y="52.5" width="335" height="37"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                        <state key="normal" title="Without Pin"/>
+                                        <connections>
+                                            <action selector="testWithNoPin" destination="BYZ-38-t0r" eventType="touchUpInside" id="04w-XB-LqD"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2. Default alamofire SSL Pinning" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rNR-46-IqT">
+                                        <rect key="frame" x="0.0" y="104.5" width="335" height="37.5"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="14"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r37-ju-Qqo">
+                                        <rect key="frame" x="0.0" y="157" width="335" height="37"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                        <state key="normal" title="Default Alamofire Pinning"/>
+                                        <connections>
+                                            <action selector="testWithAlamofireDefaultPin" destination="BYZ-38-t0r" eventType="touchUpInside" id="xkb-ca-AyM"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3. Custom alamofire  SSL Pinning" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4jK-bV-tIh">
+                                        <rect key="frame" x="0.0" y="209" width="335" height="37.5"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="14"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XNr-ry-xFk">
+                                        <rect key="frame" x="0.0" y="261.5" width="335" height="37.5"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                        <state key="normal" title="Alamofire Custom Policy Manager"/>
+                                        <connections>
+                                            <action selector="testWithCustomPolicyManager" destination="BYZ-38-t0r" eventType="touchUpInside" id="dED-Oz-ZOn"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4. SSL Pinning with URLSessionn" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VK3-c4-3wC">
+                                        <rect key="frame" x="0.0" y="314" width="335" height="37"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="14"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q23-U7-hoS">
+                                        <rect key="frame" x="0.0" y="366" width="335" height="37.5"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                        <state key="normal" title="NSURLSession Pinning"/>
+                                        <connections>
+                                            <action selector="testWithNSURLSessionPin" destination="BYZ-38-t0r" eventType="touchUpInside" id="JJ5-8K-9Xw"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5. Both Alamofire and URLSession SSL Pinning" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YXj-as-XbB">
+                                        <rect key="frame" x="0.0" y="418.5" width="335" height="37"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="14"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkr-Yh-81X">
+                                        <rect key="frame" x="0.0" y="470.5" width="335" height="37.5"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                        <state key="normal" title="Alamofire + NSURLSession"/>
+                                        <connections>
+                                            <action selector="testWithCustomSessionDelegate" destination="BYZ-38-t0r" eventType="touchUpInside" id="SAA-XO-kAC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Dx-RS-6Z1">
+                                <rect key="frame" x="0.0" y="567" width="375" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91l-pc-1Ov">
+                                        <rect key="frame" x="20" y="5" width="335" height="90"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="91l-pc-1Ov" firstAttribute="leading" secondItem="4Dx-RS-6Z1" secondAttribute="leading" constant="20" id="34o-LG-Tja"/>
+                                    <constraint firstAttribute="trailing" secondItem="91l-pc-1Ov" secondAttribute="trailing" constant="20" id="5Pl-gD-J5A"/>
+                                    <constraint firstAttribute="bottom" secondItem="91l-pc-1Ov" secondAttribute="bottom" constant="5" id="CTm-PQ-EsR"/>
+                                    <constraint firstAttribute="height" constant="100" id="Cz6-1S-0eb"/>
+                                    <constraint firstItem="91l-pc-1Ov" firstAttribute="top" secondItem="4Dx-RS-6Z1" secondAttribute="top" constant="5" id="iX3-Hi-bW5"/>
+                                </constraints>
+                            </view>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="rZa-Sy-k2v">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4Dx-RS-6Z1" firstAttribute="top" secondItem="uEN-Xq-BLX" secondAttribute="bottom" constant="5" id="8Jk-PY-e4C"/>
+                            <constraint firstItem="rZa-Sy-k2v" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9Ft-N9-QOv"/>
+                            <constraint firstItem="uEN-Xq-BLX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="AL6-6o-RLM"/>
+                            <constraint firstItem="uEN-Xq-BLX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="IWM-jS-esf"/>
+                            <constraint firstItem="4Dx-RS-6Z1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cuH-5t-z9y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4Dx-RS-6Z1" secondAttribute="trailing" id="iqZ-H3-B0d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4Dx-RS-6Z1" secondAttribute="bottom" id="qcS-LE-r6w"/>
+                            <constraint firstItem="rZa-Sy-k2v" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r8h-zJ-qSy"/>
+                            <constraint firstAttribute="trailing" secondItem="uEN-Xq-BLX" secondAttribute="trailing" constant="20" id="tuZ-6N-XT3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Test SSL Pinning" id="Ouf-ZL-tfh">
+                        <barButtonItem key="leftBarButtonItem" title="Cert" id="xkU-bk-Mbh">
+                            <connections>
+                                <action selector="changeCertificate:" destination="BYZ-38-t0r" id="XxF-kX-uX8"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Domain" id="BuC-MG-OCX">
+                            <connections>
+                                <action selector="changeDomain:" destination="BYZ-38-t0r" id="FVa-5j-xeo"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="activityIdicator" destination="rZa-Sy-k2v" id="NLk-KS-637"/>
+                        <outlet property="resultLabel" destination="91l-pc-1Ov" id="56S-yo-fDS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1079.2" y="133.5832083958021"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="98Q-GT-Jcz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ugt-5c-tQ3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ns1-NT-F8P">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="QNz-f9-drt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SbA-8Z-FMQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
+    </resources>
+</document>
